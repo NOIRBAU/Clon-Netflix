@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Netflix</title>
+    <link rel="icon" type="image/png" href="media/nf-favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="media/netflix_logo.png" alt="" srcset="" class="header__logo"/>
+        <nav>
+            <a href="#" class="boton boton__login">Iniciar Sesión</a>
+        </nav>
+        <section class="header__form">
+            <div class="header__contenido">
+                <h1 class="titulo">Programas y películas sin límite y mucho más.</h1>
+                <h2 class="subtitulo">Disfruta donde quieras. Cancela en cualquier momento.</h2>
+            </div>
+            <input type="email" name="email" class="formulario__email" placeholder="Email"/>
+            <a href="#" class="boton boton--grande">PROBAR AHORA</a>
+            <h3 class="titulo titulo--sm">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+        </section>
+    </header>
+    <div class="fondo">
+        <img src="media/netflix_fondo.jpg" alt="" srcset="" class="fondo__imagen"/>
+        <div class="fondo fondo--degradado"></div>
+    </div>
+    <article>
+        <div class="section__contenido">
+            <div class="columna">          
+                <h1 class="titulo">Disfruta en tu TV.</h1>
+                <h2 class="subtitulo">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</h2>
+            </div>
+            <div class="columna">
+                <div class="section__animacion">
+                    <img src="media/marco_tv.png" alt="" srcset="" class="section__imagen">
+                    <div class="section__video">
+                        <video autoplay loop muted class="video">
+                            <source src="media/video-tv.m4v" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="section__contenido">
+            <div class="columna">
+                <div class="section__telefono">
+                    <img src="media/netflix_download.jpg" class="section__imagen" alt="" srcset="">
+                    <div class="section__descarga">
+                        <img src="media/download_animation_image.png" alt="" srcset="" class="section__imagen--small">
+                        <div class="section__informacion">
+                            <p class="texto--minimo">Stranger Things</p>
+                            <p class="texto--azul">Descargando...</p>
+                        </div>
+                        <img src="media/download-icon.gif" alt="" srcset="" class="section__imagen--small">
+                    </div>
+                </div>
+            </div>
+            <div class="columna">
+                <h1 class="titulo">Descarga contenidos para ver donde vayas.</h1>
+                <h2 class="subtitulo">Disfruta offline tus películas y programas favoritos.</h2>
+            </div>  
+        </div>
+    </article>
+    <article>
+        <div class="section__contenido">
+            <div class="columna">
+                <h1 class="titulo">Disfruta donde quieras.</h1>
+                <h2 class="subtitulo">Películas y programas ilimitados en tu teléfono, tablet, computadora y TV sin costo extra.</h2>
+            </div>
+            <div class="columna">
+                <div class="section__animacion">
+                    <img src="media/marco_dispositivos.png" alt="" srcset="" class="section__imagen">
+                    <div class="section__video section__dispositivos">
+                        <video autoplay loop muted class="video">
+                            <source src="media/video-devices.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="faq">
+            <h1 class="titulo">Preguntas Frecuentes</h1>
+            <ul class="faq__lista">
+                <li class="faq__objeto">
+                    <button class="boton boton--faq" onclick="cambioPanel(0)">
+                        ¿Qué es Netflix?<svg
+                            viewBox="0 0 26 26"
+                            class="svg-pequeño svg-pequeño--panel-cerrado"
+                            focusable="true"
+                        >
+                            <path
+                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                            ></path>
+                        </svg>
+                    </button>
+                    <div class="faq__respuesta faq__respuesta--cerrada">
+                        <span>
+                            Netflix es un servicio de streaming que ofrece una gran variedad de programas, películas y documentales premiados en casi cualquier pantalla conectada a internet.
+                            <br /><br />
+                            Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más programas y películas!
+                        </span>
+                    </div>
+                </li>
+                <li class="faq__objeto">
+                    <button class="boton boton--faq" onclick="cambioPanel(1)">
+                        ¿Cuánto cuesta Netflix?<svg
+                            viewBox="0 0 26 26"
+                            class="svg-pequeño svg-pequeño--panel-cerrado"
+                            focusable="true"
+                        >
+                            <path
+                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                            ></path>
+                        </svg>
+                    </button>
+                    <div class="faq__respuesta faq__respuesta--cerrada">
+                        <span>
+                            Ve Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual muy accesible. Planes desde USD7,99 al mes. Sin costos adicionales ni contratos.
+                        </span>
+                    </div>
+                </li>
+                <li class="faq__objeto">
+                    <button class="boton boton--faq" onclick="cambioPanel(2)">
+                        ¿Dónde puedo ver Netflix?<svg
+                            viewBox="0 0 26 26"
+                            class="svg-pequeño svg-pequeño--panel-cerrado"
+                            focusable="true"
+                        >
+                            <path
+                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                            ></path>
+                        </svg>
+                    </button>
+                    <div class="faq__respuesta faq__respuesta--cerrada">
+                        <span>
+                            Ve donde quieras, cuando quieras y en todos los dispositivos que quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
+                            <br /><br />
+                            Además, puedes descargar tus programas favoritos con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.
+                        </span>
+                    </div>
+                </li>
+                <li class="faq__objeto">
+                    <button class="boton boton--faq" onclick="cambioPanel(3)">
+                        ¿Cómo cancelo?<svg
+                            viewBox="0 0 26 26"
+                            class="svg-pequeño svg-pequeño--panel-cerrado"
+                            focusable="true"
+                        >
+                            <path
+                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                            ></path>
+                        </svg>
+                    </button>
+                    <div class="faq__respuesta faq__respuesta--cerrada">
+                        <span>
+                            Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.    
+                        </span>
+                    </div>
+                </li>
+                <li class="faq__objeto">
+                    <button class="boton boton--faq" onclick="cambioPanel(4)">
+                        ¿Qué puedo ver en Netflix?<svg
+                            viewBox="0 0 26 26"
+                            class="svg-pequeño svg-pequeño--panel-cerrado"
+                            focusable="true"
+                        >
+                            <path
+                                d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                            ></path>
+                        </svg>
+                    </button>
+                    <div class="faq__respuesta faq__respuesta--cerrada">
+                        <span>
+                            Netflix tiene un amplio catálogo de programas, películas, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="cta">
+            <h3 class="titulo--sm">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+            <input
+                type="email"
+                name="email"
+                class="formulario__email"
+                placeholder="Email"
+            />
+            <a href="#" class="boton boton--grande">PROBAR AHORA</a>
+        </div>
+    </article>
+    <script>
+        function cambioPanel(index) {
+            let nodo = document.getElementsByClassName("faq__respuesta")[index];
+            let nodoAbierto = document.getElementsByClassName(
+                "faq__respuesta faq__respuesta--abierta"
+            )[0];
+            let svg = document.getElementsByClassName("svg-pequeño")[index];
+            if (nodo.className == "faq__respuesta faq__respuesta--cerrada"){
+                //Cerramos el último panel abierto si lo hay
+                if (nodoAbierto) {
+                    nodoAbierto.className = "faq__respuesta faq__respuesta--cerrada";
+                }
+                //Abrimos el panel actual
+                nodo.className = "faq__respuesta faq__respuesta--abierta";
+                svg.className.baseVal = "svg-pequeño";
+            } else {
+                //Cerramos el panel actual
+                nodo.className = "faq__respuesta faq__respuesta--cerrada";
+                svg.className.baseVal = "svg-pequeño svg-pequeño--panel-cerrado";
+            }
+        }
+    </script>
+    <footer class="footer-wrapper">
+        <div class="footer">
+          <p class="footer__top">
+            ¿Preguntas? Llama al
+            <a class="a--footer" href="tel:+1 (408) 469-4467  (USA)"
+              >+1 (408) 469-4467 (USA)</a
+            >
+          </p>
+          <nav>
+            <ul class="footer__enlaces">
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"
+                  ><span>Preguntas frecuentes</span></a
+                >
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"
+                  ><span>Centro de Ayuda</span></a
+                >
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"><span>Cuenta</span></a>
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"><span>Prensa</span></a>
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"
+                  ><span>Relaciones con Inversionistas</span></a
+                >
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"><span>Empleo</span></a>
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"><span>Formas de ver</span></a>
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"
+                  ><span>Términos de uso</span></a
+                >
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"><span>Privacidad</span></a>
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"
+                  ><span>Preferencias de cookies</span></a
+                >
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"
+                  ><span>Información corporativa</span></a                    >
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"><span>Contáctanos</span></a>
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"
+                  ><span>Prueba de velocidad</span>
+                </a>
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#"><span>Avisos legales</span></a>
+              </li>
+              <li class="footer__elementos">
+                <a class="footer__enlace" href="#">
+                  <span>Originales de Netflix</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="wrapper-idioma">
+            <div class="seleccion-idioma">
+              <select name="select" title="Selecciona un idioma" class="seleccion-idioma__opcion-actual">
+                <option value="Español">Español</option>
+                <option value="English">English</option>
+              </select>
+            </div>
+          </div>
+          <p class="footer-country">Netflix México</p>
+        </div>
+    </footer>
+</body>
+</html>
